@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 42248480}
   - component: {fileID: 42248479}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: ShopButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,13 +224,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42248477}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 52935536}
-  m_Father: {fileID: 472965668}
+  m_Father: {fileID: 339833685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -751,8 +751,10 @@ MonoBehaviour:
   InterviewBtn: {fileID: 237480903}
   CatListBtn: {fileID: 1474174674}
   CatListPanel: {fileID: 1652182986}
-  CatListItemPrefab: {fileID: 8653965499866031017, guid: 6db621a0f99206144b7c91e94dbb356d, type: 3}
+  FurnitureListBtn: {fileID: 0}
+  FurnitureListPanel: {fileID: 0}
   TownMain: {fileID: 339833684}
+  ListItemPrefab: {fileID: 8653965499866031017, guid: 6db621a0f99206144b7c91e94dbb356d, type: 3}
 --- !u!4 &233200778
 Transform:
   m_ObjectHideFlags: 0
@@ -954,6 +956,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 237480902}
+  - {fileID: 42248478}
   m_Father: {fileID: 472965668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1196,7 +1199,6 @@ RectTransform:
   - {fileID: 339833685}
   - {fileID: 1652182987}
   - {fileID: 1896957228}
-  - {fileID: 42248478}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
