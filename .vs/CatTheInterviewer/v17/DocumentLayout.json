@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\KSYHwork\\CatTheInterviewer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|c:\\ksyhwork\\cattheinterviewer\\assets\\scripts\\resumemgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resumemgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|C:\\KSYHwork\\CatTheInterviewer\\assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|C:\\KSYHwork\\CatTheInterviewer\\assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|C:\\KSYHwork\\CatTheInterviewer\\assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|C:\\KSYHwork\\CatTheInterviewer\\assets\\scripts\\globalvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\globalvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|C:\\KSYHwork\\CatTheInterviewer\\assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A66435-C4D4-CF40-0C31-4EC9F671CD15}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalValue.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\GlobalValue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GlobalValue.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\GlobalValue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GlobalValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:03:52.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResumeMgr.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ResumeMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ResumeMgr.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ResumeMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ResumeMgr.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T14:13:31.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterviewMgr.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\InterviewMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InterviewMgr.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\InterviewMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InterviewMgr.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAkwKsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T11:53:52.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JsonLoader.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\JsonLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JsonLoader.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\JsonLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JsonLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T13:46:29.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicantsList.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ApplicantsList.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantsList.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ApplicantsList.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ApplicantsList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T13:34:38.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicantData.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ApplicantData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantData.cs",
+              "ToolTip": "C:\\KSYHwork\\CatTheInterviewer\\Assets\\Scripts\\ApplicantData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ApplicantData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T11:47:23.347Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "cats": [
+        {
+            "id": 1,
+            "name": "깜냥이",
+            "stability": 1,
+            "activity": 1,
+            "communion": 1
+        },
+        {
+            "id": 2,
+            "name": "치즈냥이",
+            "stability": 2,
+            "activity": 1,
+            "communion": 1
+        },
+        {
+            "id": 3,
+            "name": "랙돌",
+            "stability": 1,
+            "activity": 1,
+            "communion": 3
+        }
+    ]
+}
