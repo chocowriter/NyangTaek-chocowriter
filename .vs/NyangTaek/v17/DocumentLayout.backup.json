@@ -3,27 +3,27 @@
   "WorkspaceRootPath": "C:\\KSYHwork\\NyangTaek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\catslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\catslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\catslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +38,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -50,12 +54,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ApplicantData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T10:57:14.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T10:57:14.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CatsList.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\CatsList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatsList.cs",
@@ -63,16 +66,24 @@
               "RelativeToolTip": "Assets\\Scripts\\CatsList.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T08:40:49.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-05-23T08:40:49.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "TownMgr.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TownMgr.cs",
+              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TownMgr.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T12:02:59.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ApplicantsList.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\ApplicantsList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantsList.cs",
@@ -80,18 +91,17 @@
               "RelativeToolTip": "Assets\\Scripts\\ApplicantsList.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T04:50:24.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T04:50:24.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "JsonLoader.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JsonLoader.cs",
               "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
               "RelativeToolTip": "Assets\\Scripts\\JsonLoader.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxcAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T16:16:43.665Z",
               "EditorCaption": ""
@@ -106,21 +116,7 @@
               "RelativeToolTip": "Assets\\Scripts\\InterviewMgr.cs",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAkwKsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T12:08:50.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TownMgr.cs",
-              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TownMgr.cs",
-              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TownMgr.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAqwGkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T12:02:59.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-06T12:08:50.411Z"
             },
             {
               "$type": "Document",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CatData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T09:03:57.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T09:03:57.561Z"
             }
           ]
         }

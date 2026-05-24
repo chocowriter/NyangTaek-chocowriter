@@ -1,7 +1,8 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "FurnitureData", menuName = "Scriptable Objects/FurnitureData")]
-public class FurnitureData : ScriptableObject
+[System.Serializable]
+public class FurnitureData
 {
-    
+    public int id;
+    public string name;
 }

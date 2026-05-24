@@ -751,8 +751,8 @@ MonoBehaviour:
   InterviewBtn: {fileID: 237480903}
   CatListBtn: {fileID: 1474174674}
   CatListPanel: {fileID: 1652182986}
-  FurnitureListBtn: {fileID: 0}
-  FurnitureListPanel: {fileID: 0}
+  FurnitureListBtn: {fileID: 42248479}
+  FurnitureListPanel: {fileID: 1896957227}
   TownMain: {fileID: 339833684}
   ListItemPrefab: {fileID: 8653965499866031017, guid: 6db621a0f99206144b7c91e94dbb356d, type: 3}
 --- !u!4 &233200778
@@ -1049,7 +1049,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 233200777}
         m_TargetAssemblyTypeName: TownMgr, Assembly-CSharp
-        m_MethodName: CloseCatList
+        m_MethodName: CloseFurnitureList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3322,6 +3322,7 @@ MonoBehaviour:
     applicants: []
   catsList:
     cats: []
+  furnitureList: {fileID: 0}
 --- !u!4 &1761785293
 Transform:
   m_ObjectHideFlags: 0

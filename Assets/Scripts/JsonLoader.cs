@@ -6,6 +6,7 @@ public class JsonLoader : MonoBehaviour
 {
     public ApplicantsList applicantsList;
     public CatsList catsList;
+    public FurnituresList furnitureList;
     public static JsonLoader Instance { get; private set; }
     void Awake()
     {
@@ -17,6 +18,7 @@ public class JsonLoader : MonoBehaviour
 
         LoadApplicantData();
         LoadCatsData();
+        LoadFurnitureData();
     }
 
     private void LoadCatsData()
@@ -31,5 +33,12 @@ public class JsonLoader : MonoBehaviour
         TextAsset json = Resources.Load<TextAsset>("ApplicantsData");
         ApplicantsList data = JsonUtility.FromJson<ApplicantsList>(json.text);
         applicantsList = data;
+    }
+    
+    void LoadFurnitureData()
+    {
+        TextAsset json = Resources.Load<TextAsset>("FurnitureData");
+        FurnituresList data = JsonUtility.FromJson<FurnituresList>(json.text);
+        furnitureList = data;
     }
 }

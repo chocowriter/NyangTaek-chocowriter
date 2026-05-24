@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\KSYHwork\\NyangTaek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\furnitureslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\furnitureslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\furnituredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\furnituredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\ksyhwork\\nyangtaek\\assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\catslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\catdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicantdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\KSYHwork\\NyangTaek\\assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +46,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "FurnitureData.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\FurnitureData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FurnitureData.cs",
+              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\FurnitureData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FurnitureData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T12:01:54.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FurnituresList.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\FurnituresList.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FurnituresList.cs",
+              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\FurnituresList.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FurnituresList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:55:20.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JsonLoader.cs",
+              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JsonLoader.cs",
+              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JsonLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T16:16:43.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ApplicantData.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\ApplicantData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantData.cs",
@@ -54,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CatsList.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\CatsList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatsList.cs",
@@ -62,28 +113,25 @@
               "RelativeToolTip": "Assets\\Scripts\\CatsList.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T08:40:49.857Z"
+              "WhenOpened": "2026-05-23T08:40:49.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TownMgr.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TownMgr.cs",
               "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
               "RelativeToolTip": "Assets\\Scripts\\TownMgr.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAuwGcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T12:02:59.34Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ApplicantsList.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\ApplicantsList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantsList.cs",
@@ -96,18 +144,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "JsonLoader.cs",
-              "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\JsonLoader.cs",
-              "ToolTip": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
-              "RelativeToolTip": "Assets\\Scripts\\JsonLoader.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T16:16:43.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "InterviewMgr.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\InterviewMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InterviewMgr.cs",
@@ -115,11 +151,12 @@
               "RelativeToolTip": "Assets\\Scripts\\InterviewMgr.cs",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAkwKsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T12:08:50.411Z"
+              "WhenOpened": "2026-05-06T12:08:50.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CatData.cs",
               "DocumentMoniker": "C:\\KSYHwork\\NyangTaek\\Assets\\Scripts\\CatData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatData.cs",
@@ -127,7 +164,8 @@
               "RelativeToolTip": "Assets\\Scripts\\CatData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T09:03:57.561Z"
+              "WhenOpened": "2026-05-04T09:03:57.561Z",
+              "EditorCaption": ""
             }
           ]
         }

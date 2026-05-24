@@ -30,6 +30,7 @@ public class TownMgr : MonoBehaviour
     {
         InterviewBtn.onClick.AddListener(OnInterviewBtnClick);
         CatListBtn.onClick.AddListener(ShowCatList);
+        FurnitureListBtn.onClick.AddListener(ShowFurnitureList);
     }
     // Update is called once per frame
     void Update()
@@ -69,7 +70,7 @@ public class TownMgr : MonoBehaviour
         foreach (var cat in JsonLoader.Instance.catsList.cats)
         {
             GameObject item = Instantiate(ListItemPrefab, content);
-            item.transform.Find("Button/CatName").GetComponent<Text>().text = cat.name;
+            item.transform.Find("Button/Name").GetComponent<Text>().text = cat.name;
             /*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
             item.transform.Find("Activity").GetComponent<Text>().text = "Activity: " + cat.activity;
             item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*/
@@ -104,5 +105,16 @@ public class TownMgr : MonoBehaviour
     {
         Transform content = FurnitureListPanel.transform.Find("Scroll View/Viewport/Content");
         Debug.Log(content.name);
+        foreach (var furniture in JsonLoader.Instance.furnitureList.furnitures)
+        {
+            GameObject item = Instantiate(ListItemPrefab, content);
+            item.transform.Find("Button/Name").GetComponent<Text>().text = furniture.name;
+            
+        }
+    }
+    public void CloseFurnitureList()
+    {
+        FurnitureListPanel.SetActive(false);
+        TownMain.SetActive(true);
     }
 }
