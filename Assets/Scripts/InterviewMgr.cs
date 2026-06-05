@@ -1,4 +1,5 @@
 using System.Linq;
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -33,6 +34,7 @@ public class InterviewMgr : MonoBehaviour
 
     public GameObject textPrefab;
 
+    public GameObject memoPanel;
     string catName = "고양이";
 
     bool hasApproached = false;
@@ -147,11 +149,14 @@ public class InterviewMgr : MonoBehaviour
         if (isPassed)
         {
             ResultText.text = "합격입니다!";
+            PlayerPrefs.SetInt("Applicant" + Index, 1);    // 합격 여부 저장
         }
         else
         {
             ResultText.text = "불합격입니다!";
+            PlayerPrefs.SetInt("Applicant" + Index, 0);    // 합격 여부 저장
         }
+        PlayerPrefs.Save();
         GanteakPanel.SetActive(false);
         ResultPanel.SetActive(true);
     }
@@ -187,5 +192,17 @@ public class InterviewMgr : MonoBehaviour
     void ShowCount()
     {
         CountText.text = "남은 행동\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
+    }
+
+    public void ShowMemo()
+    {
+        // 메모 보여주는 함수
+        memoPanel.SetActive(true);
+    }
+
+    public void HideMemo()
+    {
+        // 메모 숨기는 함수
+        memoPanel.SetActive(false);
     }
 }

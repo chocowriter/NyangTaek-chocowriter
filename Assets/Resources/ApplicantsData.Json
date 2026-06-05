@@ -9,26 +9,41 @@
         "feature2": "집에서 혼자서 일하는 시간 많음",
         "feature3": "차분하고 책임감 있음",
         "reaction_approach": "접근 시 이유나에 대한 반응입니다",
+        "reaction_approach_ex1": "접근 시 이유나에 대한 추가 반응1입니다",
+        "reaction_approach_ex2": "접근 시 이유나에 대한 추가 반응2입니다",
         "reaction_stare": "쳐다볼 시 이유나에 대한 반응입니다",
+        "reaction_stare_ex1": "쳐다볼 시 이유나에 대한 추가 반응1입니다",
+        "reaction_stare_ex2": "쳐다볼 시 시 이유나에 대한 추가 반응2입니다",
         "reaction_smell": "냄새 맡을 시 이유나에 대한 반응입니다",
+        "reaction_smell_ex1": "냄새 맡을 시 이유나에 대한 추가 반응1입니다",
+        "reaction_smell_ex2": "냄새 맡을 시 이유나에 대한 추가 반응2입니다",
         "reaction_ignore": "무시할 시 이유나에 대한 반응입니다",
+        "reaction_ignore_ex1": "무시할 시 시 이유나에 대한 추가 반응1입니다",
+        "reaction_ignore_ex2": "무시할 시 이유나에 대한 추가 반응2입니다",
         "image_url": "testimg1"
     },
 
     {
         "id": 2,
-        "name": "박정호",
+        "name": "김철민",
         "job": "시설 관리 직원",
         "career": "아파트 시설 관리 10년차",
         "feature1": "말 수가 적음",
         "feature2": "무뚝뚝함",
         "feature3": "동물에 대해 잘 모름",
-        "reaction_approach": "접근 시 박정호에 대한 반응입니다",
-        "reaction_stare": "쳐다볼 시간 시 박정호에 대한 반응입니다",
-        "reaction_smell": "냄새 맡을 시 박정호에 대한 반응입니다",
-        "reaction_ignore": "무시할 시 박정호에 대한 반응입니다"
-        
+        "reaction_approach": "접근 시 김철민에 대한 반응입니다",
+        "reaction_approach_ex1": "접근 시 김철민에 대한 추가 반응1입니다",
+        "reaction_approach_ex2": "접근 시 김철민에 대한 추가 반응2입니다",
+        "reaction_stare": "쳐다볼 시 김철민에 대한 반응입니다",
+        "reaction_stare_ex1": "쳐다볼 시 김철민에 대한 추가 반응1입니다",
+        "reaction_stare_ex2": "쳐다볼 시 시 김철민에 대한 추가 반응2입니다",
+        "reaction_smell": "냄새 맡을 시 김철민에 대한 반응입니다",
+        "reaction_smell_ex1": "냄새 맡을 시 김철민에 대한 추가 반응1입니다",
+        "reaction_smell_ex2": "냄새 맡을 시 김철민에 대한 추가 반응2입니다",
+        "reaction_ignore": "무시할 시 김철민에 대한 반응입니다",
+        "reaction_ignore_ex1": "무시할 시 시 김철민에 대한 추가 반응1입니다",
+        "reaction_ignore_ex2": "무시할 시 김철민에 대한 추가 반응2입니다",
+        "image_url": "testimg2"
     }
-
     ]
 }

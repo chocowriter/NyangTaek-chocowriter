@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InterviewScene.unity
     guid: bc44fe84d8fcbe44d9a2fecec6ef580c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TownScene.unity
     guid: fcf20c9609fe8a143b1d250bd8a7d7a2
   m_configObjects:
