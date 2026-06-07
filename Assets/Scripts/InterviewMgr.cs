@@ -149,12 +149,12 @@ public class InterviewMgr : MonoBehaviour
         if (isPassed)
         {
             ResultText.text = "합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + Index, 1);    // 합격 여부 저장
+            PlayerPrefs.SetInt("Applicant" + (Index+1), 1);    // 합격 저장
         }
         else
         {
             ResultText.text = "불합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + Index, 0);    // 합격 여부 저장
+            PlayerPrefs.SetInt("Applicant" + (Index+1), 0);    // 불합격 저장
         }
         PlayerPrefs.Save();
         GanteakPanel.SetActive(false);

@@ -351,7 +351,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1264368519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.00000333786}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -828,8 +828,11 @@ MonoBehaviour:
   CatListPanel: {fileID: 1652182986}
   FurnitureListBtn: {fileID: 42248479}
   FurnitureListPanel: {fileID: 1896957227}
+  OwnerListBtn: {fileID: 2037032728}
+  OwnerListPanel: {fileID: 1646266873}
   TownMain: {fileID: 339833684}
   ListItemPrefab: {fileID: 8653965499866031017, guid: 6db621a0f99206144b7c91e94dbb356d, type: 3}
+  OwnerItemPrefab: {fileID: 6290483170075809378, guid: abbfdddbc7cf9154388ddf34ac060490, type: 3}
 --- !u!4 &233200778
 Transform:
   m_ObjectHideFlags: 0
@@ -1493,7 +1496,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 233200777}
         m_TargetAssemblyTypeName: TownMgr, Assembly-CSharp
-        m_MethodName: CloseCatList
+        m_MethodName: CloseOwnerList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2540,7 +2543,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1016663362
 MonoBehaviour:
@@ -2611,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1060560573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2675,8 +2678,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1532471301}
   m_HandleRect: {fileID: 1532471300}
   m_Direction: 0
-  m_Value: 1.0000395
-  m_Size: 0.9787474
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3455,9 +3458,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 392, y: -649.9997}
-  m_SizeDelta: {x: 800, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -650}
+  m_SizeDelta: {x: 0, y: 1300}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1516806592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,8 +3473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
-  m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_HorizontalFit: 2
+  m_VerticalFit: 0
 --- !u!114 &1516806593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3491,11 +3494,11 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
-  m_StartAxis: 1
-  m_CellSize: {x: 800, y: 300}
+  m_StartAxis: 0
+  m_CellSize: {x: 400, y: 650}
   m_Spacing: {x: 0, y: 0}
-  m_Constraint: 1
-  m_ConstraintCount: 1
+  m_Constraint: 2
+  m_ConstraintCount: 2
 --- !u!1 &1532471299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,7 +3531,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 286840723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.021252573, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -3716,7 +3719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uACE0\uC591\uC774"
+  m_Text: "\uC9D1\uC0AC"
 --- !u!222 &1587730413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4311,16 +4314,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ScrollRect
   m_Content: {fileID: 1516806591}
-  m_Horizontal: 0
-  m_Vertical: 1
+  m_Horizontal: 1
+  m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 15
   m_Viewport: {fileID: 1016663361}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 1994550073}
+  m_HorizontalScrollbar: {fileID: 1060560574}
+  m_VerticalScrollbar: {fileID: 0}
   m_HorizontalScrollbarVisibility: 2
   m_VerticalScrollbarVisibility: 2
   m_HorizontalScrollbarSpacing: -3
@@ -4595,8 +4598,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 50930060}
   m_HandleRect: {fileID: 50930059}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999666
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

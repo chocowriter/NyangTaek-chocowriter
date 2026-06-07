@@ -7,6 +7,7 @@ public class JsonLoader : MonoBehaviour
     public ApplicantsList applicantsList;
     public CatsList catsList;
     public FurnituresList furnitureList;
+
     public static JsonLoader Instance { get; private set; }
     void Awake()
     {
