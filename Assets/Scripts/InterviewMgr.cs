@@ -35,6 +35,7 @@ public class InterviewMgr : MonoBehaviour
     public GameObject textPrefab;
 
     public GameObject memoPanel;
+    public GameObject documentPanel;
     string catName = "고양이";
 
     bool hasApproached = false;
@@ -204,5 +205,15 @@ public class InterviewMgr : MonoBehaviour
     {
         // 메모 숨기는 함수
         memoPanel.SetActive(false);
+    }
+
+    public void ShowDocument()
+    {
+        documentPanel.SetActive(true);
+    }
+
+    public void HideDocument()
+    {
+        documentPanel.SetActive(false);
     }
 }

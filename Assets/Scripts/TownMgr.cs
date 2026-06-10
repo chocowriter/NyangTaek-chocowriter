@@ -46,7 +46,7 @@ public class TownMgr : MonoBehaviour
 
     void OnInterviewBtnClick()
     {
-        SceneManager.LoadScene("ResumeScene");
+        SceneManager.LoadScene("InterviewScene");
     }
 
     void ShowCatList()
@@ -183,7 +183,6 @@ public class TownMgr : MonoBehaviour
             }
             i++;
         }
-        
-        
     }
+
 }
