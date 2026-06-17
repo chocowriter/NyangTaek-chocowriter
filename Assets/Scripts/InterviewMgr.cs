@@ -11,6 +11,7 @@ public class InterviewMgr : MonoBehaviour
     int maxQuestionCount = 3;
 
     [Header("Interview")]
+    // 기본 행동 버튼들
     public Button ApproachBtn;
     public Button StareBtn;
     public Button SmellBtn;
@@ -18,6 +19,8 @@ public class InterviewMgr : MonoBehaviour
     public Button DecideBtn;
     public Button AcceptBtn;
     public Button RejectBtn;
+
+    public GameObject ExActPanel; // 추가 행동 패널
 
     public Text CountText;
 
@@ -36,6 +39,7 @@ public class InterviewMgr : MonoBehaviour
 
     public GameObject memoPanel;
     public GameObject documentPanel;
+
     string catName = "고양이";
 
     bool hasApproached = false;
@@ -45,8 +49,8 @@ public class InterviewMgr : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Index = GlobalValue.interviewIndex;
-        ApproachBtn.onClick.AddListener(Approach);
+        Index = 0; // 현재 면접 보고 있는 지원자의 인덱스
+        /*ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
         IgnoreBtn.onClick.AddListener(Ignore);
@@ -55,10 +59,10 @@ public class InterviewMgr : MonoBehaviour
         DecideBtn.onClick.AddListener(Decide);
         AcceptBtn.onClick.AddListener(() => ShowResult(true));
         RejectBtn.onClick.AddListener(() => ShowResult(false));
-        NextBtn.onClick.AddListener(Next);
+        NextBtn.onClick.AddListener(Next);*/
         TownBtn.onClick.AddListener(Town);
 
-        StartInterview();
+        //StartInterview();
     }
 
     // Update is called once per frame
@@ -67,7 +71,7 @@ public class InterviewMgr : MonoBehaviour
         ShowCount();
     }
 
-    void StartInterview()
+    /*void StartInterview()
     {
         //
         questionCount = 0;
@@ -89,6 +93,11 @@ public class InterviewMgr : MonoBehaviour
         questionCount++;
         AddLog(catName, "다가간다");
         AddLog(JsonLoader.Instance.applicantsList.applicants[Index].name, JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach);
+
+        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach_ex1));
+        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach_ex2));
+        ExActPanel.SetActive(true);
+        
     }
 
     void Stare()
@@ -150,12 +159,12 @@ public class InterviewMgr : MonoBehaviour
         if (isPassed)
         {
             ResultText.text = "합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + (Index+1), 1);    // 합격 저장
+            PlayerPrefs.SetInt("Applicant" + (Index+1), 1);    // 합격 저장 (1은 합격, 0은 불합격)
         }
         else
         {
             ResultText.text = "불합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + (Index+1), 0);    // 불합격 저장
+            PlayerPrefs.SetInt("Applicant" + (Index+1), 0);    // 불합격 저장 (1은 합격, 0은 불합격)
         }
         PlayerPrefs.Save();
         GanteakPanel.SetActive(false);
@@ -171,7 +180,7 @@ public class InterviewMgr : MonoBehaviour
         ResultPanel.SetActive(false);
         SceneManager.LoadScene("ResumeScene");
         
-    }
+    }*/
 
     void Town()
     {

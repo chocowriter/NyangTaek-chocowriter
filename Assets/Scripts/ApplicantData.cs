@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class ApplicantData
+public class ApplicantData : IData
 {
     public int id;
     public string name;
@@ -23,4 +23,9 @@ public class ApplicantData
     public string reaction_ignore_ex1;
     public string reaction_ignore_ex2;
     public string image_url;
+
+    public string GetName()
+    {
+        return name;
+    }
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+public interface IData
+{
+    string GetName();
+}
+
 public class TownMgr : MonoBehaviour
 {
     public Button InterviewBtn;
@@ -24,6 +29,9 @@ public class TownMgr : MonoBehaviour
     public GameObject TownMain;
     public GameObject ListItemPrefab;
     public GameObject OwnerItemPrefab;
+
+    GameState gameState;
+
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -33,10 +41,11 @@ public class TownMgr : MonoBehaviour
 
     void Start()
     {
+        gameState = FindAnyObjectByType<GameState>();
         InterviewBtn.onClick.AddListener(OnInterviewBtnClick);
-        CatListBtn.onClick.AddListener(ShowCatList);
+        /*CatListBtn.onClick.AddListener(ShowCatList);
         FurnitureListBtn.onClick.AddListener(ShowFurnitureList);
-        OwnerListBtn.onClick.AddListener(ShowOwnerList);
+        OwnerListBtn.onClick.AddListener(ShowOwnerList);*/
     }
     // Update is called once per frame
     void Update()
@@ -49,7 +58,7 @@ public class TownMgr : MonoBehaviour
         SceneManager.LoadScene("InterviewScene");
     }
 
-    void ShowCatList()
+    /*void ShowCatList()
     {
         TownMain.SetActive(false);
         RefreshCatList();
@@ -77,9 +86,9 @@ public class TownMgr : MonoBehaviour
         {
             GameObject item = Instantiate(ListItemPrefab, content);
             item.transform.Find("Button/Name").GetComponent<Text>().text = cat.name;
-            /*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
+            *//*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
             item.transform.Find("Activity").GetComponent<Text>().text = "Activity: " + cat.activity;
-            item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*/
+            item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*//*
         }
     }
     public void CloseCatList()
@@ -163,7 +172,7 @@ public class TownMgr : MonoBehaviour
     {
         OwnerListPanel.SetActive(false);
         TownMain.SetActive(true);
-    }
+    }*/
 
     void GetMyOwner()
     {
@@ -185,4 +194,57 @@ public class TownMgr : MonoBehaviour
         }
     }
 
+    public void ShowCatList()
+    {
+        TownMain.SetActive(false);
+        RefreshList(gameState.catDataList, CatListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
+        CatListPanel.SetActive(true);
+    }
+
+    public void ShowOwnerList()
+    {
+        TownMain.SetActive(false);
+        RefreshList(gameState.applicantDataList, OwnerListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
+        OwnerListPanel.SetActive(true);
+    }
+
+    public void ShowFurnitureList()
+    {
+        TownMain.SetActive(false);
+        RefreshList(gameState.furnitureDataList, FurnitureListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
+        FurnitureListPanel.SetActive(true);
+    }
+
+
+    void RefreshList<T>(List<T> list, Transform content, GameObject listItemPrefab)
+        where T : IData
+    {
+        if (content != null && content.childCount > 0)
+        {
+            foreach (Transform child in content)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        FillList(list, content, listItemPrefab);
+    }
+
+    void FillList<T>(List<T> list, Transform content, GameObject listItemPrefab)
+        where T : IData
+    {
+        Debug.Log(content.name);
+        foreach (var cat in list)
+        {
+            GameObject item = Instantiate(ListItemPrefab, content);
+            item.transform.Find("Button/Name").GetComponent<Text>().text = cat.GetName();
+            /*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
+            item.transform.Find("Activity").GetComponent<Text>().text = "Activity: " + cat.activity;
+            item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*/
+        }
+    }
+    public void CloseList()
+    {
+        CatListPanel.SetActive(false);
+        TownMain.SetActive(true);
+    }
 }

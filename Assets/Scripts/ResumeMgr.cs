@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ResumeMgr : MonoBehaviour
 {
-    [Header("Resume Info")]
+    /*[Header("Resume Info")]
     public Text NameText;
     public Text JobText;
     public Text CareerText;
@@ -37,5 +37,5 @@ public class ResumeMgr : MonoBehaviour
     {
         // 버튼 클릭 시 인터뷰 화면으로 이동
         SceneManager.LoadScene("InterviewScene");
-    }
+    }*/
 }
