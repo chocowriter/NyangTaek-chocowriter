@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -22,10 +23,18 @@ public class ApplicantData : IData
     public string reaction_ignore;
     public string reaction_ignore_ex1;
     public string reaction_ignore_ex2;
+    public int closeness;
+    public int activity;
+    public int independence;
     public string image_url;
 
     public string GetName()
     {
         return name;
     }
+}
+
+public class ApplicantDataBase
+{
+    public List<ApplicantData> applicants;
 }

@@ -20,6 +20,9 @@
         "reaction_ignore": "무시할 시 이유나에 대한 반응입니다",
         "reaction_ignore_ex1": "무시할 시 시 이유나에 대한 추가 반응1입니다",
         "reaction_ignore_ex2": "무시할 시 이유나에 대한 추가 반응2입니다",
+        "independence": 1,
+        "activity": 1,
+        "closeness": 3,
         "image_url": "testimg1"
     },
 
@@ -43,6 +46,9 @@
         "reaction_ignore": "무시할 시 김철민에 대한 반응입니다",
         "reaction_ignore_ex1": "무시할 시 시 김철민에 대한 추가 반응1입니다",
         "reaction_ignore_ex2": "무시할 시 김철민에 대한 추가 반응2입니다",
+        "independence": 1,
+        "activity": 1,
+        "closeness": 3,
         "image_url": "testimg2"
     }
     ]

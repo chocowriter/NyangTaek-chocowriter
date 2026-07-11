@@ -46,11 +46,16 @@ public class InterviewMgr : MonoBehaviour
     bool hasStared = false;
     bool hasSmelled = false;
     bool hasIgnored = false;
+
+    GameState gameState;
+    GameDataBase gameDataBase;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Index = 0; // 현재 면접 보고 있는 지원자의 인덱스
-        /*ApproachBtn.onClick.AddListener(Approach);
+        gameState = FindAnyObjectByType<GameState>();
+        gameDataBase = FindAnyObjectByType<GameDataBase>();
+        ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
         IgnoreBtn.onClick.AddListener(Ignore);
@@ -59,7 +64,7 @@ public class InterviewMgr : MonoBehaviour
         DecideBtn.onClick.AddListener(Decide);
         AcceptBtn.onClick.AddListener(() => ShowResult(true));
         RejectBtn.onClick.AddListener(() => ShowResult(false));
-        NextBtn.onClick.AddListener(Next);*/
+        //NextBtn.onClick.AddListener(Next);
         TownBtn.onClick.AddListener(Town);
 
         //StartInterview();
@@ -71,11 +76,11 @@ public class InterviewMgr : MonoBehaviour
         ShowCount();
     }
 
-    /*void StartInterview()
+    void StartInterview()
     {
         //
         questionCount = 0;
-        string spriteURL = JsonLoader.Instance.applicantsList.applicants[Index].image_url;
+        string spriteURL = gameDataBase.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
             applicantImage.sprite = Resources.Load<Sprite>("Images/" + spriteURL);
     }
@@ -92,10 +97,10 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "다가간다");
-        AddLog(JsonLoader.Instance.applicantsList.applicants[Index].name, JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach);
+        AddLog(gameDataBase.Applicants.applicants[Index].name, gameDataBase.Applicants.applicants[Index].reaction_approach);
 
-        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach_ex1));
-        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(JsonLoader.Instance.applicantsList.applicants[Index].reaction_approach_ex2));
+        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDataBase.Applicants.applicants[Index].reaction_approach_ex1));
+        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDataBase.Applicants.applicants[Index].reaction_approach_ex2));
         ExActPanel.SetActive(true);
         
     }
@@ -113,7 +118,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName,"노려본다");
-        AddLog(JsonLoader.Instance.applicantsList.applicants[Index].name, JsonLoader.Instance.applicantsList.applicants[Index].reaction_stare);
+        AddLog(gameDataBase.Applicants.applicants[Index].name, gameDataBase.Applicants.applicants[Index].reaction_stare);
     }
 
     void Smell()
@@ -129,7 +134,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "냄새 맡는다");
-        AddLog(JsonLoader.Instance.applicantsList.applicants[Index].name, JsonLoader.Instance.applicantsList.applicants[Index].reaction_smell);
+        AddLog(gameDataBase.Applicants.applicants[Index].name, gameDataBase.Applicants.applicants[Index].reaction_smell);
     }
 
     void Ignore()
@@ -145,7 +150,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "무시한다");
-        AddLog(JsonLoader.Instance.applicantsList.applicants[Index].name, JsonLoader.Instance.applicantsList.applicants[Index].reaction_ignore);
+        AddLog(gameDataBase.Applicants.applicants[Index].name, gameDataBase.Applicants.applicants[Index].reaction_ignore);
     }
 
     void Decide()
@@ -159,21 +164,21 @@ public class InterviewMgr : MonoBehaviour
         if (isPassed)
         {
             ResultText.text = "합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + (Index+1), 1);    // 합격 저장 (1은 합격, 0은 불합격)
+            gameState.ownedApplicantIds.Add(gameDataBase.Applicants.applicants[Index].id);
         }
         else
         {
             ResultText.text = "불합격입니다!";
-            PlayerPrefs.SetInt("Applicant" + (Index+1), 0);    // 불합격 저장 (1은 합격, 0은 불합격)
+            gameState.ownedApplicantIds.Remove(gameDataBase.Applicants.applicants[Index].id);    // 불합격 저장 (1은 합격, 0은 불합격)
         }
-        PlayerPrefs.Save();
+
         GanteakPanel.SetActive(false);
         ResultPanel.SetActive(true);
     }
 
-    void Next()
+    /*void Next()
     {
-        if (Index >= JsonLoader.Instance.applicantsList.applicants.Length)
+        if (Index >= gameState.applicantDataList.Count)
             return;
 
         GlobalValue.interviewIndex++;

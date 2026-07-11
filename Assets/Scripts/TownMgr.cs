@@ -31,6 +31,7 @@ public class TownMgr : MonoBehaviour
     public GameObject OwnerItemPrefab;
 
     GameState gameState;
+    GameDataBase gameDataBase;
 
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,9 +44,9 @@ public class TownMgr : MonoBehaviour
     {
         gameState = FindAnyObjectByType<GameState>();
         InterviewBtn.onClick.AddListener(OnInterviewBtnClick);
-        /*CatListBtn.onClick.AddListener(ShowCatList);
-        FurnitureListBtn.onClick.AddListener(ShowFurnitureList);
-        OwnerListBtn.onClick.AddListener(ShowOwnerList);*/
+        CatListBtn.onClick.AddListener(ShowCatList);
+        FurnitureListBtn.onClick.AddListener(ShowItemList);
+        OwnerListBtn.onClick.AddListener(ShowOwnerList);
     }
     // Update is called once per frame
     void Update()
@@ -58,160 +59,24 @@ public class TownMgr : MonoBehaviour
         SceneManager.LoadScene("InterviewScene");
     }
 
-    /*void ShowCatList()
-    {
-        TownMain.SetActive(false);
-        RefreshCatList();
-        CatListPanel.SetActive(true);
-    }
-
-    void RefreshCatList()
-    {
-        Transform content = CatListPanel.transform.Find("Scroll View/Viewport/Content");
-        if (content != null && content.childCount > 0)
-        {
-            foreach (Transform child in content)
-            {
-                Destroy(child.gameObject);
-            }
-        }
-        FillCatList();
-    }
-
-    void FillCatList()
-    {
-        Transform content = CatListPanel.transform.Find("Scroll View/Viewport/Content");
-        Debug.Log(content.name);
-        foreach (var cat in JsonLoader.Instance.catsList.cats)
-        {
-            GameObject item = Instantiate(ListItemPrefab, content);
-            item.transform.Find("Button/Name").GetComponent<Text>().text = cat.name;
-            *//*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
-            item.transform.Find("Activity").GetComponent<Text>().text = "Activity: " + cat.activity;
-            item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*//*
-        }
-    }
-    public void CloseCatList()
-    {
-        CatListPanel.SetActive(false);
-        TownMain.SetActive(true);
-    }
-    void ShowFurnitureList()
-    {
-        TownMain.SetActive(false);
-        RefreshFurnitureList();
-        FurnitureListPanel.SetActive(true);
-    }
-
-    void RefreshFurnitureList()
-    {
-        Transform content = FurnitureListPanel.transform.Find("Scroll View/Viewport/Content");
-        if (content != null && content.childCount > 0)
-        {
-            foreach (Transform child in content)
-            {
-                Destroy(child.gameObject);
-            }
-        }
-        FillFurnitureList();
-    }
-
-    void FillFurnitureList()
-    {
-        Transform content = FurnitureListPanel.transform.Find("Scroll View/Viewport/Content");
-        Debug.Log(content.name);
-        foreach (var furniture in JsonLoader.Instance.furnitureList.furnitures)
-        {
-            GameObject item = Instantiate(ListItemPrefab, content);
-            item.transform.Find("Button/Name").GetComponent<Text>().text = furniture.name;
-            
-        }
-    }
-    public void CloseFurnitureList()
-    {
-        FurnitureListPanel.SetActive(false);
-        TownMain.SetActive(true);
-    }
-    void ShowOwnerList()
-    {
-        TownMain.SetActive(false);
-        RefreshOwnerList();
-        OwnerListPanel.SetActive(true);
-    }
-
-    void RefreshOwnerList()
-    {
-        Transform content = OwnerListPanel.transform.Find("Scroll View/Viewport/Content");
-        if (content != null && content.childCount > 0)
-        {
-            foreach (Transform child in content)
-            {
-                Destroy(child.gameObject);
-            }
-        }
-        FillOwnerList();
-    }
-
-    void FillOwnerList()
-    {
-        Transform content = OwnerListPanel.transform.Find("Scroll View/Viewport/Content");
-        Debug.Log(content.name);
-        GetMyOwner();
-        foreach (var owner in JsonLoader.Instance.applicantsList.applicants)
-        {
-            if (OwnerList.Contains(owner.id))
-            {
-                GameObject item = Instantiate(OwnerItemPrefab, content);
-                item.transform.Find("Button/Name").GetComponent<Text>().text = owner.name;
-            }
-            
-
-        }
-    }
-    public void CloseOwnerList()
-    {
-        OwnerListPanel.SetActive(false);
-        TownMain.SetActive(true);
-    }*/
-
-    void GetMyOwner()
-    {
-        int i = 1;
-        OwnerList.Clear();
-        while (true) 
-        {
-            if (PlayerPrefs.HasKey("Applicant" + i))
-            {
-                if (PlayerPrefs.GetInt("Applicant" + i) == 1)
-                    OwnerList.Add(i);
-                Debug.Log(PlayerPrefs.GetInt("Applicant" + i));
-            }
-            else
-            {
-                break;
-            }
-            i++;
-        }
-    }
-
     public void ShowCatList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.catDataList, CatListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
+        RefreshList(gameState.ownedCats, CatListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
         CatListPanel.SetActive(true);
     }
 
     public void ShowOwnerList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.applicantDataList, OwnerListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
+        RefreshList(gameState.ownedApplicants, OwnerListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
         OwnerListPanel.SetActive(true);
     }
 
-    public void ShowFurnitureList()
+    public void ShowItemList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.furnitureDataList, FurnitureListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
+        RefreshList(gameState.ownedItems, FurnitureListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
         FurnitureListPanel.SetActive(true);
     }
 
@@ -235,16 +100,18 @@ public class TownMgr : MonoBehaviour
         Debug.Log(content.name);
         foreach (var cat in list)
         {
-            GameObject item = Instantiate(ListItemPrefab, content);
+            GameObject item = Instantiate(listItemPrefab, content);
             item.transform.Find("Button/Name").GetComponent<Text>().text = cat.GetName();
-            /*item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
-            item.transform.Find("Activity").GetComponent<Text>().text = "Activity: " + cat.activity;
-            item.transform.Find("Communion").GetComponent<Text>().text = "Communion: " + cat.communion;*/
+            //item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
+            Debug.Log("Added item: " + cat.GetName());
         }
     }
-    public void CloseList()
+
+    public void CloseList(GameObject listPanel)
     {
-        CatListPanel.SetActive(false);
+        listPanel.SetActive(false);
         TownMain.SetActive(true);
     }
+
+
 }

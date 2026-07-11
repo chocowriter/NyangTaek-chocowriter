@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -5,12 +6,18 @@ public class CatData : IData
 {
     public int id;
     public string name;
-    public int stability;
+    public int closeness;
     public int activity;
-    public int communion;
+    public int independence;
 
     public string GetName()
     {
         return name;
     }
+}
+
+[System.Serializable]
+public class CatDataBase
+{
+    public List<CatData> cats;
 }
