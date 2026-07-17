@@ -17,7 +17,7 @@ public class CatData : IData
 }
 
 [System.Serializable]
-public class CatDataBase
+public class CatDatabase
 {
     public List<CatData> cats;
 }

@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 576855604}
   - component: {fileID: 576855603}
   m_Layer: 0
-  m_Name: GameDataBase
+  m_Name: GameDatabase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

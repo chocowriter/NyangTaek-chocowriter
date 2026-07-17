@@ -12,7 +12,7 @@ public class ItemData : IData
 }
 
 [System.Serializable]
-public class ItemDataBase
+public class ItemDatabase
 {
     public ItemData[] items;
 }

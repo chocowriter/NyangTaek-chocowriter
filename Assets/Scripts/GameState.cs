@@ -22,7 +22,7 @@ public class GameState : MonoBehaviour
         ownedCats.Clear();
         ownedItems.Clear();
         ownedApplicants.Clear();
-        GameDataBase gameDataBase = FindAnyObjectByType<GameDataBase>();
+        GameDatabase gameDataBase = FindAnyObjectByType<GameDatabase>();
         foreach (int catId in ownedCatIds)
         {
             CatData cat = gameDataBase.Cats.cats.Find(c => c.id == catId);

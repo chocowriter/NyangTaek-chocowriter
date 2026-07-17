@@ -31,7 +31,7 @@ public class TownMgr : MonoBehaviour
     public GameObject OwnerItemPrefab;
 
     GameState gameState;
-    GameDataBase gameDataBase;
+    GameDatabase gameDatabase;
 
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

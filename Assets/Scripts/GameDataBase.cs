@@ -1,23 +1,16 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameDataBase : MonoBehaviour
+public class GameDatabase : MonoBehaviour
 {
-    public CatDataBase Cats { get; private set; }
-    public ItemDataBase Items { get; private set; }
-    public ApplicantDataBase Applicants { get; private set; }
+    public CatDatabase Cats { get; private set; }
+    public ItemDatabase Items { get; private set; }
+    public ApplicantDatabase Applicants { get; private set; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Cats = JsonLoader.LoadData<CatDataBase>("CatData");
-        Items = JsonLoader.LoadData<ItemDataBase>("FurnitureData");
-        Applicants = JsonLoader.LoadData<ApplicantDataBase>("ApplicantData");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Cats = JsonLoader.LoadData<CatDatabase>("CatData");
+        Items = JsonLoader.LoadData<ItemDatabase>("FurnitureData");
+        Applicants = JsonLoader.LoadData<ApplicantDatabase>("ApplicantData");
     }
 }

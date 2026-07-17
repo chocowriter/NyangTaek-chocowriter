@@ -34,7 +34,8 @@ public class ApplicantData : IData
     }
 }
 
-public class ApplicantDataBase
+[System.Serializable]
+public class ApplicantDatabase
 {
     public List<ApplicantData> applicants;
 }
